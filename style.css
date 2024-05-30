@@ -1,0 +1,251 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+*:focus{
+  outline: none;
+}
+body{
+  position: relative;
+  background: white;
+  font-family: 'roboto', sans-serif;
+}
+  .navbar {
+    position:relative;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 60px;
+    background: white;
+    display: flex;
+    align-content: center;
+    padding: 0 2.5vw;
+  } 
+  .toggle-btn {
+    width: 20px;
+    height: 10px;
+    position: relative;
+  }
+  .toggle-btn span{
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    top: 50%;
+    transform: translateY(-50%);
+    background: black;
+}
+.toggle-btn span:nth-child(1){
+    top: 0;
+}
+.toggle-btn span:nth-child(2){
+    top: 50%;
+}
+.toggle-btn span:nth-child(3){
+    top: 100%;
+}
+  .logo {
+    height: 55px;
+    margin: -10px 30px 0;
+  }
+  .search-box {
+    position: relative;
+    max-width: 300px;
+    width: 50%;
+    height: 30px;
+    display: flex;
+  }
+  .search-bar {
+    width: 85%;
+    height: 100%;
+    border: 2px solid grey ;
+    padding: 0 20px;
+    font-size: 16px;
+    text-transform: capitalize;
+  }
+  .search-btn {
+    width: 15%;
+    height: 100%;
+    background: white   ;
+    border: 2px solid grey;
+    padding: 5px 0;
+  }
+  .search-btn img{
+    height: 100%;
+    width: 80%;
+  }
+  .user-options {
+    height: 36px;
+    display: flex;
+    margin-left: auto;
+    align-items: center;
+  }
+  .user-dp {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    overflow: hidden;
+    margin-left: 10px;
+  }
+  .user-dp img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  .user-options .icon{
+    height: 50%;
+    margin-right: 20px;
+    cursor: pointer;
+}
+.user-dp{
+    cursor: pointer;
+    height: 30px;
+    width: 30px;
+    border-radius: 50%;
+    overflow: hidden;
+}
+.user-dp img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+  /* sidebar */
+  .side-bar {
+    position: fixed;
+    top: 60px;
+    left: 0;
+    min-width: 250px;
+    width: 250px;
+    height: 100%;
+    background-color: white;
+    padding-right: 10px;
+  }
+  .side-bar.active {
+    transform: translateX(0);
+  }
+  .links {
+    display: block;
+    width: 100%;
+    padding: 10px 20px;
+    display: flex;
+    align-items: center;
+    text-transform: capitalize;
+    color: black;
+    font-size: 14px;
+    font-weight: 500;
+    text-decoration: none;
+  }  
+  .links img {
+    height: 25px;
+    margin-right: 20px;
+  }
+  .links:hover{
+    background: gray;
+  }
+
+  .seperator {
+    height: 1px;
+    width: 100%;
+    background-color: #333;
+    margin: 20px 0;
+  }
+  /* filters */
+  .filters {
+    position: fixed;
+    left: 250px;
+    top: 60px;
+    width: calc(100% - 1100px);
+    height: 60px;
+    background: white;
+    border-top: white;
+    border-bottom: white;
+    padding: 5px;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    object-fit: cover;
+    margin-left: auto;
+  }
+  .filter-options {
+    flex: auto;
+    padding: 5px;
+    border-radius: 50px;
+    background-color: white;
+    border: 3px solid gray;
+    text-transform: capitalize;
+    margin-right: 5px;
+    color: black;
+    font-size: 15px;
+    cursor: pointer;
+  }
+  .filter-options:hover{
+    background: grey;
+  }
+ 
+ /* videos */
+ .videos{
+  background-color: whitesmoke;
+}
+.video-container{
+  display:flex;
+  flex-direction: column;
+  
+}
+.video-section{
+  display: flex;
+  align-items: flex-start;
+  min-height: 100px;
+  min-width: 100px;
+  height: 80%;
+  width: 80%;
+  margin: 17%;
+  margin-top: 10%;
+  gap: 3px;
+}
+.video-bot-section{
+  display: flex;
+  align-items: flex-start;
+  margin-top: none;
+  background: gray;
+}
+.video-details{
+  display: flex;
+  flex-direction: column;
+}
+.video-title{
+  font-size: 1.1rem;
+  font-weight: bolder;
+  margin-bottom: 2px;
+  text-decoration: none;
+  color: black;
+}
+.video-chan-name{
+  margin-bottom: .1rem;
+  text-decoration: none;
+  transition: color 150ms;
+  color: blue;
+}
+.video-chan-name:hover{
+  color: red;
+}
+.video-metdata{
+  color: black;
+}
+.thumbnnail{
+  position: relative;
+  display: flex;
+}
+.thumbnail-image{
+  width: 100%;
+  height: 100%;
+  min-width: 50px;
+  min-height: 50px;
+  background: white;
+}
+.channel-icon{
+  margin-right: 20px;
+  border-radius: 50%;
+  width: 36px;
+  height: 36px;
+  background: white;
+}
